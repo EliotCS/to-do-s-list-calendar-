@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styling.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Notification  -->
+    <div id="Noti"></div>
+
+    <!-- Month Navigation-->
+    <div class="month">
+        <h1 class="years">Year</h1>
+        <button id="Previous">Previous</button>
+        <h1 id="currentmonth">Month</h1>
+        <button id="Next">Next</button>
+        <h1 class="years">Year</h1>
+    </div>
+
+    <!-- Weekdays Header -->
+    <div class="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+    </div>
+
+    <!-- Calendar Days Grid -->
+    <div class="days" id="days"></div>
+
+    <div id="CreateEvent">
+        <div id="drag">
+            <button id="closeEvent">&times;</button>
+        </div>
+        <div id="chosenDate">00/00/0000</div>
+
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="Activity">Event Title</label>
+                <input type="text" id="Activity" placeholder="Add Title" required>
+            </div>
+
+            <div class="time-row">
+                <div class="form-group">
+                    <label for="Start-Time">Start Time</label>
+                    <input type="time" id="Start-Time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Finish-Time">End Time</label>
+                    <input type="time" id="Finish-Time" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="eventColor">Event Tag Color</label>
+                <input type="color" id="eventColor" value="#00d2ff">
+            </div>
+
+            <button id="submitEvent" type="submit">Create Event</button>
+        </form>
+    </div>
+
+    <div id="editEventTask">
+        <div class="clseb">
+            <button id="clse-btn">&times;</button>
+        </div>
+        <div id="taskname">Task Name</div>
+
+        <div id="editActionBtns">
+            <div id="editEvent">Edit</div>
+            <div id="deleteEvent">Delete</div>
+        </div>
+
+        <form id="editForm" style="display: none;">
+            <div class="form-group">
+                <label for="editActivity">Event Title</label>
+                <input type="text" id="editActivity" required>
+            </div>
+
+            <div class="time-row">
+                <div class="form-group">
+                    <label for="editStartTime">Start Time</label>
+                    <input type="time" id="editStartTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="editFinishTime">End Time</label>
+                    <input type="time" id="editFinishTime" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="editColor">Event Tag Color</label>
+                <input type="color" id="editColor" value="#00d2ff">
+            </div>
+
+            <button id="confirmEdit" type="submit">Confirm Changes</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
