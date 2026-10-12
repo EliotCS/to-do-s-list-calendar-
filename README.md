@@ -37,8 +37,6 @@ While building this project, I practiced:
 This project is part of my journey mastering vanilla JavaScript and front-end web development. Building a fully custom calendar allowed me to sharpen my logic for date arithmetic, master complex DOM manipulation without reliance on third-party frameworks, and craft an intuitive user interface from scratch.
 
 ## Preview
-![Calendar App Screenshot](<img width="1917" height="887" alt="Screenshot 2026-10-11 200233" src="https://github.com/user-attachments/assets/aa770eae-8260-4ad6-8af6-352e82ae27f3" />
-)
-
+![Calendar App Screenshot](https://github.com/user-attachments/assets/aa770eae-8260-4ad6-8af6-352e82ae27f3)
 ## Live Demo
 [View the Live Event Calendar](https://eliotcs.github.io/to-do-s-list-calendar-/)
